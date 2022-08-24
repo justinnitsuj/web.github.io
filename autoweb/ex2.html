@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Rogerweb</title>
+        <link rel="stylesheet" href="ex2.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+        <!-- CSS only -->   
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg">
+        </header>
+        <section id="banner">
+            <div class="banner-text">
+                <h1></h1>
+                <p></p>
+                <div class="banner-btn">
+                    <a href="#"><span></span>Find Out</a>
+                    <a href="#"><span></span>Read More</a>
+                </div>
+            </div>
+        </section>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#artist">C.V. 藝術創作者</a></li>
+                    <li><a href="#exhibition">Exhibition 展覽</a></li>
+                    <li><a href="#portfolio">Portfolio 作品</a></li>
+                    <li><a href="#footer">Contact 聯絡</a></li>
+                </ul>
+            </nav>    
+        </div>
+        <div id="menuBtn">
+            <img src="img/menubar.png" id="menu">
+        </div>
+        <div class="ex1-box">
+            <div class="ex1-title">
+                <h3>2022 韋啟義師生西畫聯展 – 北投公民會館 展覽介紹</h3>
+            </div>
+            <div class="ex1">
+                <img src="img/ex2-img1.jpg">
+            </div>
+            <div class="ex2">
+                <img src="img/ex2-img2.jpg">
+            </div>
+            <div class="ex1">
+                <img src="img/ex2-img3.jpg">
+            </div>
+            <div class="ex2">
+                <img src="img/ex2-img4.jpg">
+            </div>
+            <div class="ex1">
+                <img src="img/ex2-img5.jpg">
+            </div>
+            <div class="ex2">
+                <img src="img/ex2-img6.jpg">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <section id="footer">
+            <div class="title-text">
+                <p>Contact</p>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Address</h1>
+                    <p><i class="fa-solid fa-location-dot"></i>2F., No.19, Lane 63, Sec. 2, Dunhua S. Rd., Da-an District, Taipei City 10682, Taiwan (R.O.C.)</p>
+                    <p><i class="fa-solid fa-location-dot"></i>台北市10682大安區敦化南路二段63巷19號2F</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Get in touch</h1>
+                    <a href="https://www.google.com/intl/zh-TW_tw/gmail/about/"><p><i class="fa-solid fa-envelope"></i>roger0913@gmail.com</p></a>
+                    <p><i class="fa-solid fa-phone"></i>0911-371-340</p>
+                    <a href="https://www.facebook.com/danteroger/"><p><i class="fa-brands fa-facebook"></i>徐恒鈞 （Roger Hsu）</p></a>
+                    <a href="https://www.instagram.com/rogerhsu_0913/"><p><i class="fa-brands fa-instagram"></i>rogerhsu_0913</p></a>
+                </div>
+            </div>
+            <div class="link">
+                <div class="link-top"></div>
+            </div>
+            <div class="copy-text">
+                <p>copyright chien</p>
+            </div>
+        </section> 
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+            sideNav.style.right = "-250px";
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                    menu.src="img/X.png";
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                    menu.src="img/menubar.png";
+                }
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed:1000,
+                speedAsDuration:true
+            });
+        </script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/231e09f1bf.js" crossorigin="anonymous"></script>
+    </body>
+</html>

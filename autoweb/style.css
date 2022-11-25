@@ -147,6 +147,10 @@ nav ul li a {
         /* width: 100%; */
     }
 
+    #banner img {
+        width: 100vw;
+    }
+
     #menuBtn {
         width: 35px;
         height: 35px;
@@ -1337,6 +1341,23 @@ li {
         margin-top: 3px;
     }
 
+    #url {
+        padding: 60px 0 20px;
+        background: #efefef;
+    }
+
+    #url a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .itext p {
+        padding: 0 20px;
+    }
+
+    .urltext p {
+        padding: 0 20px;
+    }
 }
 
 

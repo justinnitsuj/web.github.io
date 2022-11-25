@@ -10,12 +10,12 @@ html {
     overflow-x: hidden;
 }
 
-#banner {
+/* #banner {
     background: url(img/banner_new.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-}
+} */
 
 header {
     font-size: 20px;
@@ -40,6 +40,10 @@ header img {
     /* position: absolute;
     top:4%;
     left:45%; */
+}
+
+#banner img {
+    width: 100vw;
 }
 
 .banner-text {
@@ -135,10 +139,10 @@ nav ul li a {
 
 @media screen and (max-width:770px) {
     #banner {
-        background: url(img/banner_new.jpg);
+        /* background: url(img/banner_new.jpg); */
         background-size: cover;
         background-position: center;
-        height: 40vh;
+
         margin-top: 70px;
         /* width: 100%; */
     }
@@ -1207,6 +1211,25 @@ li {
     #portfoli-before2022 {
         padding-bottom: 60px;
     }
+}
+
+/* url */
+#url {
+    padding: 60px 0 20px;
+    background: #efefef;
+}
+
+#url a {
+    text-decoration: none;
+    color: black;
+}
+
+.itext p {
+    padding: 0 20px;
+}
+
+.urltext p {
+    padding: 0 20px;
 }
 
 /* footer */

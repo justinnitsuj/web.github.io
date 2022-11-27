@@ -1220,7 +1220,7 @@ li {
 /* url */
 #url {
     padding: 60px 0 20px;
-    background: #efefef;
+    background: #d1d0d0;
 }
 
 #url a {
@@ -1234,6 +1234,10 @@ li {
 
 .urltext p {
     padding: 0 20px;
+}
+
+.itext h6 {
+    padding: 22px 20px;
 }
 
 /* footer */
@@ -1343,16 +1347,20 @@ li {
 
     #url {
         padding: 60px 0 20px;
-        background: #efefef;
+        background: #d1d0d0;
     }
 
     #url a {
-        text-decoration: none;
-        color: black;
+
+        color: blue;
     }
 
     .itext p {
-        padding: 0 20px;
+        padding: 20px 20px;
+    }
+
+    .itext h6 {
+        padding: 22px 20px;
     }
 
     .urltext p {

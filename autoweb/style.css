@@ -11,7 +11,7 @@ html {
 }
 
 #banner {
-    background: url(img/banner_new.jpg);
+    /* background: url(img/banner_new.jpg); */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -135,14 +135,27 @@ nav ul li a {
 
 @media screen and (max-width:770px) {
     #banner {
-        background: url(img/banner_new.jpg);
+        /* background: url(img/banner_new.jpg); */
         background-size: cover;
         background-position: center;
-        height: 40vh;
+        max-height: 35vh;
         margin-top: 70px;
         /* width: 100%; */
+        position: relative;
     }
-
+    #banner img{
+        max-height: 100%;  
+        max-width: 100%; 
+        width: auto;
+        height: auto;
+        position: absolute;  
+        top: 0;  
+         
+        left: 0;  
+        right: 0;  
+        margin: auto;
+        
+    }
     #menuBtn {
         width: 35px;
         height: 35px;
@@ -161,37 +174,6 @@ nav ul li a {
         width: 35px;
         margin-top: 5px;
     }
-    .audio-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    audio:hover,
-    audio:focus,
-    audio:active {
-        -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
-        -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
-        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
-        -webkit-transform: scale(1.05);
-        -moz-transform: scale(1.05);
-        transform: scale(1.05);
-    }
-
-
-    audio {
-        -webkit-transition: all 0.5s linear;
-        -moz-transition: all 0.5s linear;
-        -o-transition: all 0.5s linear;
-        transition: all 0.5s linear;
-        -moz-box-shadow: 2px 2px 4px 0px #006773;
-        -webkit-box-shadow: 2px 2px 4px 0px #006773;
-        box-shadow: 2px 2px 4px 0px #006773;
-        -moz-border-radius: 7px 7px 7px 7px;
-        -webkit-border-radius: 7px 7px 7px 7px;
-        border-radius: 7px 7px 7px 7px;
-    }
-
 }
 
 /* artist */
@@ -658,7 +640,36 @@ li {
     .container-1 {
         display: block;
     }
+    .audio-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    audio:hover,
+    audio:focus,
+    audio:active {
+        -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+
+    audio {
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+        -moz-box-shadow: 2px 2px 4px 0px #006773;
+        -webkit-box-shadow: 2px 2px 4px 0px #006773;
+        box-shadow: 2px 2px 4px 0px #006773;
+        -moz-border-radius: 7px 7px 7px 7px;
+        -webkit-border-radius: 7px 7px 7px 7px;
+        border-radius: 7px 7px 7px 7px;
+    }
 }
 
 #exhibition {
@@ -1239,6 +1250,30 @@ li {
     }
 }
 
+/* solo exhibition */
+#url {
+    padding: 60px 0 20px;
+    background: rgba(255, 255, 255, 0.174);
+}
+.itext{
+    padding: 10px;
+}
+.urltext{
+    padding: 10px;
+}
+@media screen and (max-width:770px) {
+    #url {
+        padding: 60px 0 20px;
+        background: rgba(197, 186, 186, 0.502);
+    }
+    .itext{
+        padding: 15px;
+    }
+    .urltext{
+        padding: 15px;
+    }
+}
+
 /* footer */
 #footer {
     padding: 60px 0 20px;
@@ -1728,7 +1763,6 @@ footer a {
         font-size: 16px;
         color: black;
     }
-
     .por-text {
         margin-bottom: -40px;
     }
